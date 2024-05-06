@@ -1,21 +1,20 @@
 import azure.functions as func
 import pymongo
 from bson.objectid import ObjectId
+import certifi
+import os
 
 def main(req: func.HttpRequest) -> func.HttpResponse:
-
     id = req.params.get('id')
     request = req.get_json()
-
     if request:
         try:
-            url = "localhost"  # TODO: Update with appropriate MongoDB connection information
-            client = pymongo.MongoClient(url)
-            database = client['azure']
+            url = os.environ["DB_CONNECTION"]
+            client = pymongo.MongoClient(url, tlsCAFile=certifi.where())
+            database = client['vytt1-db']
             collection = database['advertisements']
-            
-            filter_query = {'_id': ObjectId(id)}
-            update_query = {"$set": eval(request)}
+            filter_query = {'_id': id}
+            update_query = {"$set": request}
             rec_id1 = collection.update_one(filter_query, update_query)
             return func.HttpResponse(status_code=200)
         except:

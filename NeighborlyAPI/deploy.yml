@@ -1,0 +1,200 @@
+data:
+  AzureWebJobsStorage: RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXZ5dHQxcmc4OGFjO0FjY291bnRLZXk9YzZVMmJSSFV0cVNKRWRKekJ4cGRWeVZKVG9Yai9CT0JUVnJHL2ZRVTVwN3RBc3FaNkFiaU5FMW9UL1A5ZE1kc25zNWlLaW9jUFBkbCtBU3RqeDEyd1E9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0
+  FUNCTIONS_WORKER_RUNTIME: cHl0aG9u
+  FUNCTIONS_EXTENSION_VERSION: fjQ=
+  AzureWebJobsFeatureFlags: RW5hYmxlV29ya2VySW5kZXhpbmc=
+  APPLICATIONINSIGHTS_CONNECTION_STRING: SW5zdHJ1bWVudGF0aW9uS2V5PTk1OTQ0ZDFjLWIzZDktNGY0ZC05MWRlLTEwNzI0OWZmNDkxOTtJbmdlc3Rpb25FbmRwb2ludD1odHRwczovL3dlc3R1czItMi5pbi5hcHBsaWNhdGlvbmluc2lnaHRzLmF6dXJlLmNvbS87TGl2ZUVuZHBvaW50PWh0dHBzOi8vd2VzdHVzMi5saXZlZGlhZ25vc3RpY3MubW9uaXRvci5henVyZS5jb20vO0FwcGxpY2F0aW9uSWQ9NzFhZWFjNzAtMzNkMS00ZDE0LWFmMzMtZjVmNGZkZWUxYzYy
+  WEBSITE_CONTENTAZUREFILECONNECTIONSTRING: RGVmYXVsdEVuZHBvaW50c1Byb3RvY29sPWh0dHBzO0FjY291bnROYW1lPXZ5dHQxcmc4OGFjO0FjY291bnRLZXk9YzZVMmJSSFV0cVNKRWRKekJ4cGRWeVZKVG9Yai9CT0JUVnJHL2ZRVTVwN3RBc3FaNkFiaU5FMW9UL1A5ZE1kc25zNWlLaW9jUFBkbCtBU3RqeDEyd1E9PTtFbmRwb2ludFN1ZmZpeD1jb3JlLndpbmRvd3MubmV0
+  WEBSITE_CONTENTSHARE: dnl0dDEtZnVuYy1hcHA4ZGU4
+  DB_CONNECTION: bW9uZ29kYjovL3Z5dHQxLWNvc21vczpNSTVWZWNoamZzNWpieWdVbGxhQ1FwM3JCaW15MXExN0NjSUFEUUdEbHdTVlQ4TkxqbnY2TnkzZjMyODJBbEgxSGwzYWw1Y1lJbzlXQUNEYkR3aEdEUT09QHZ5dHQxLWNvc21vcy5tb25nby5jb3Ntb3MuYXp1cmUuY29tOjEwMjU1Lz9zc2w9dHJ1ZSZyZXBsaWNhU2V0PWdsb2JhbGRiJnJldHJ5d3JpdGVzPWZhbHNlJm1heElkbGVUaW1lTVM9MTIwMDAwJmFwcE5hbWU9QHZ5dHQxLWNvc21vc0A=
+apiVersion: v1
+kind: Secret
+metadata:
+  name: vytt1-api
+---
+data:
+  host.master: SVJUZVVKMWVkX3JGSnh2eW8taVpqOEttWEZNWVdlandSM1E1NzhXS25HcFZBekZ1b3pwTUlRPT0=
+  host.function.default: RVUyUzRINlhJeEdWeE9KXzI3M2VnNWlFVmlxOXJiSVVBNFh2THM2TmpISl9BekZ1OURtTHZRPT0=
+  host.systemKey.default: YlB0aktNWmM0NV9WS0JnZGtHNzJqRi0wTXNSVXZpdVNuTW1pM2ZxQU1odzVBekZ1YjNiOHJBPT0=
+  functions.createadvertisement.default: Z0tSY0pRYWM5NjRNNkJvMVZ0UVhYUjNhVDhKNndoYVpYU2FORFEzNVhXQmJBekZ1TUdMcWdnPT0=
+  functions.deleteadvertisement.default: TFR3UVlBUGJYTldkd3RVVjdkRDJvNDVTcXktTm5CRFdBQWFwWEpkb214VkdBekZ1UHdkZjBnPT0=
+  functions.getadvertisement.default: R3lLUUFwNEtaakRfa1A4SVB5YlFnWlBtUzBnUDRzYlVPV0laSF94WWtJY0pBekZ1SDVIcGx3PT0=
+  functions.getadvertisements.default: WDZVQ2Y4ekdYS1VPcnVZZEYtSDhnRUlsMXItY2FaZkpEbWdncG1STGRCYmtBekZ1WkhKdGlBPT0=
+  functions.getpost.default: c1JBQTFJSHVUSmpGNmxpbTM3aS1NY3lFNU1hcWR2WUhycnl5U0ZkbV9SSGxBekZ1M2JCZWh3PT0=
+  functions.getposts.default: WFFwaHhXNHFYMElFMW1iaTREeFFEenpUWWtjLWNReTJzN24wdEg0WGtpNVJBekZ1M1NsMkZnPT0=
+  functions.updateadvertisement.default: NkVUdFB5UUlYdTRkWGpzUVBRSzFNQlB0OVpTWVlOdFpjRGN6bjNnZF83YWlBekZ1SlRvQ0JBPT0=
+apiVersion: v1
+kind: Secret
+metadata:
+  name: func-keys-kube-secret-vytt1-api
+---
+apiVersion: v1
+kind: ServiceAccount
+metadata:
+  name: vytt1-api-function-keys-identity-svc-act
+---
+rules:
+- apiGroups:
+  - ''
+  resources:
+  - secrets
+  - configMaps
+  verbs:
+  - get
+  - list
+  - watch
+  - create
+  - update
+  - patch
+  - delete
+apiVersion: rbac.authorization.k8s.io/v1
+kind: Role
+metadata:
+  name: functions-keys-manager-role
+---
+roleRef:
+  apiGroup: rbac.authorization.k8s.io
+  kind: Role
+  name: functions-keys-manager-role
+subjects:
+- kind: ServiceAccount
+  name: vytt1-api-function-keys-identity-svc-act
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata:
+  name: vytt1-api-function-keys-identity-svc-act-functions-keys-manager-rolebinding
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: vytt1-api-http
+spec:
+  selector:
+    app: vytt1-api-http
+  ports:
+  - protocol: TCP
+    port: 80
+    targetPort: 80
+  type: LoadBalancer
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vytt1-api-http
+  labels:
+    app: vytt1-api-http
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: vytt1-api-http
+  template:
+    metadata:
+      labels:
+        app: vytt1-api-http
+    spec:
+      containers:
+      - name: vytt1-api-http
+        image: vytt1acr.azurecr.io/vytt1-api
+        ports:
+        - containerPort: 80
+        env:
+        - name: AzureFunctionsJobHost__functions__0
+          value: createAdvertisement
+        - name: AzureFunctionsJobHost__functions__1
+          value: deleteAdvertisement
+        - name: AzureFunctionsJobHost__functions__2
+          value: getAdvertisement
+        - name: AzureFunctionsJobHost__functions__3
+          value: getAdvertisements
+        - name: AzureFunctionsJobHost__functions__4
+          value: getPost
+        - name: AzureFunctionsJobHost__functions__5
+          value: getPosts
+        - name: AzureFunctionsJobHost__functions__6
+          value: updateAdvertisement
+        - name: AzureWebJobsSecretStorageType
+          value: kubernetes
+        - name: AzureWebJobsKubernetesSecretName
+          value: secrets/func-keys-kube-secret-vytt1-api
+        envFrom:
+        - secretRef:
+            name: vytt1-api
+        readinessProbe:
+          failureThreshold: 3
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 240
+          httpGet:
+            path: /
+            port: 80
+            scheme: HTTP
+        startupProbe:
+          failureThreshold: 3
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 240
+          httpGet:
+            path: /
+            port: 80
+            scheme: HTTP
+      serviceAccountName: vytt1-api-function-keys-identity-svc-act
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: vytt1-api
+  labels:
+    app: vytt1-api
+spec:
+  selector:
+    matchLabels:
+      app: vytt1-api
+  template:
+    metadata:
+      labels:
+        app: vytt1-api
+    spec:
+      containers:
+      - name: vytt1-api
+        image: vytt1acr.azurecr.io/vytt1-api
+        env:
+        - name: AzureFunctionsJobHost__functions__0
+          value: eventHubTrigger
+        envFrom:
+        - secretRef:
+            name: vytt1-api
+        readinessProbe:
+          failureThreshold: 3
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 240
+          httpGet:
+            path: /
+            port: 80
+            scheme: HTTP
+        startupProbe:
+          failureThreshold: 3
+          periodSeconds: 10
+          successThreshold: 1
+          timeoutSeconds: 240
+          httpGet:
+            path: /
+            port: 80
+            scheme: HTTP
+      serviceAccountName: vytt1-api-function-keys-identity-svc-act
+---
+apiVersion: keda.sh/v1alpha1
+kind: ScaledObject
+metadata:
+  name: vytt1-api
+  labels: {}
+spec:
+  scaleTargetRef:
+    name: vytt1-api
+  triggers:
+  - type: eventgridtrigger
+    metadata:
+      direction: in
+---
+
